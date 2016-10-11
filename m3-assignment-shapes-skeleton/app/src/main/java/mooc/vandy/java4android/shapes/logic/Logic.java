@@ -161,52 +161,111 @@ public class Logic
     }
 
     // TODO -- add your code here
+
+    /**
+     *
+     * @param length The length of the rectangle area
+     * @param width The width of the rectangle area
+     * @return The area of the rectangle area
+     */
     public static double rectangleArea(double length, double width) {
         double area = length * width;
         return area;
     }
 
+    /**
+     *
+     * @param length The length of the rectangle perimeter
+     * @param width The width of the rectangle perimeter
+     * @return The perimeter of the rectangle perimeter
+     */
     public static double rectanglePerimeter(double length, double width) {
         double perimeter = 2 * (length + width);
         return perimeter;
     }
 
+    /**
+     *
+     * @param radius The radius of the circle area
+     * @return The area of the circle area
+     */
     public static double circleArea(double radius) {
         double area = Math.PI * (radius * radius);
         return area;
     }
 
+    /**
+     *
+     * @param radius The radius of the circle circumference
+     * @return The circumference of the circle circumference
+     */
     public static double circleCircumference(double radius) {
         double circumference = 2 * Math.PI * radius;
         return circumference;
     }
 
+    /**
+     *
+     * @param base The base of the right triangle area
+     * @param height The height of the right triangle area
+     * @return The area of the right triangle area
+     */
     public static double rightTriangleArea(double base, double height) {
         double area = (base * height) / 2;
         return area;
     }
 
+    /**
+     *
+     * @param base The base of the right triangle perimeter
+     * @param height The height of the right triangle perimeter
+     * @return The perimeter of the right triangle perimeter
+     */
     public static double rightTrianglePerimeter(double base, double height) {
         double result = Math.pow(Math.pow(base, 2) + Math.pow(height, 2), 0.5);
         double perimeter = base + height + result;
         return perimeter;
     }
 
+    /**
+     *
+     * @param length The length of the box volume
+     * @param width The width of the box volume
+     * @param depth The depth of the box volume
+     * @return The volume of the box volume
+     */
     public static double boxVolume(double length, double width, double depth) {
         double volume = length * width * depth;
         return volume;
     }
 
+    /**
+     *
+     * @param length The length of the box surface area
+     * @param width The width of the box surface area
+     * @param depth The depth of the box surface area
+     * @return The surface area of the box surface area
+     */
     public static double boxSurfaceArea(double length, double width, double depth) {
         double surfaceArea = ((2 * length * depth) + (2 * length * width) + (2 * width * depth));
         return surfaceArea;
     }
 
+    /**
+     *
+     * @param radius The radius of the sphere volume
+     * @return The volume of the sphere volume
+     */
     public static double sphereVolume(double radius) {
         double volume = ((4.0 / 3) * (Math.PI) * (radius * radius * radius));
         return volume;
     }
 
+    /**
+     *
+     * @param radius The radius of the sphere surface area
+     * @return The surface area of the sphere surface area
+     */
     public static double sphereSurfaceArea(double radius) {
         double surfaceArea = (4 * Math.PI * (radius * radius));
         return surfaceArea;
